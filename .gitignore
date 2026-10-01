@@ -1,0 +1,34 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+
+# Campaign runtime data
+campaigns/*/knowledge.sqlite
+campaigns/*/knowledge.sqlite-journal
+campaigns/*/artifacts/
+campaigns/*/reports/
+campaigns/*/events.jsonl
+*.sqlite
+
+# Lean
+lean/**/.lake/
+lean/**/lake-manifest.json
+*.olean
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

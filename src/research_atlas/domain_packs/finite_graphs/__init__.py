@@ -1,0 +1,1 @@
+"""Finite graphs domain pack."""

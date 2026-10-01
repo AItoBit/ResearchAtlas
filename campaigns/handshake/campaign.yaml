@@ -1,0 +1,29 @@
+id: handshake
+name: Handshaking lemma calibration
+domain: finite_undirected_simple_graphs
+domain_pack: finite_graphs
+central_question: >
+  What constraints hold on the vertex degrees of a finite undirected simple graph?
+budget:
+  max_steps: 12
+  max_model_calls: 0
+  max_seconds: 180
+  max_lean_attempts: 2
+stop_criteria:
+  - at_least_one_refuted_claim
+  - at_least_one_reviewed_or_formal_proof
+verification:
+  require_second_checker: true
+  forbid_axioms: true
+  bounded_enumeration_is_not_proof: true
+weights:
+  I: 1.0
+  U: 1.2
+  R: 0.8
+  C: 1.5
+  T: 0.5
+  B: 0.7
+initial_corpus:
+  - title: Handshaking lemma (classical)
+    locator: standard graph-theory textbooks; Euler 1736 incidence counting
+    notes: Calibration target. Not a claim of originality.
